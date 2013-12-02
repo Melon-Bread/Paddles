@@ -1,7 +1,6 @@
 package org.melonbread.Paddles;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.controllers.mappings.Ouya;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.graphics.GL20;
@@ -54,9 +53,9 @@ public class GameScreen implements Screen {
 		
 		
 		
-		if(Gdx.input.isKeyPressed(Ouya.BUTTON_Y))
+		if(Gdx.input.isKeyPressed(Keys.W))
 			p1Paddle.MoveUp(10);
-		if(Gdx.input.isKeyPressed(Ouya.BUTTON_O))
+		if(Gdx.input.isKeyPressed(Keys.S))
 			p1Paddle.MoveDown(10);
 		
 		if(Gdx.input.isKeyPressed(Keys.UP))
