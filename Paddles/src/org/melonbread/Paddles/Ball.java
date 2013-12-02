@@ -44,12 +44,8 @@ public class Ball {
 	}
 	
  	public void HitPaddle() {
- 		ballSpeed.x += 0.5;
- 		
- 		if(ballSpeed.y < 0)
- 			ballSpeed.y -= 0.5;
- 		else
- 			ballSpeed.y += 0.5;
+ 		ballSpeed.x *= 1.2;
+ 		ballSpeed.y *= 1.3;
  		
  		ballSpeed.x *= -1;
  		ballSpeed.y *= -1;
